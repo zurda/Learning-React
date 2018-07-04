@@ -7,7 +7,7 @@
 	- makes working in teams easier
 	- makes our code easy to maintain
 	- makes code reusable (DRY)
-![alt text](img/getting-started-components.pdf "Any webpage could be split into components")
+![alt text](img/getting-started-components.png "Any webpage could be split into components")
 - React is about writing **Custom HTML Elements**
 - Webpages built with React: [Reactjs](https://reactjs.org/), [Udemy](https://www.udemy.com/)
 - React: the logic we need for creating React components. 
