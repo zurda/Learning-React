@@ -1,0 +1,14 @@
+.UserInput {
+	margin: 20px 0 0 0; 
+	padding: 20px;
+	font-size: 1.2rem;
+	width: 60%;
+	margin: 10px auto;
+ 	text-align: center;
+}
+
+.UserInput * {
+	color: grey;
+	font-size: 1.2rem;
+	padding: 10px;
+}
