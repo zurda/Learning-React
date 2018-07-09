@@ -2,3 +2,19 @@
   text-align: center;
 }
 
+.UserInput {
+	margin: 20px auto;
+	font-size: 1.2rem;
+	padding: 5px 0;
+	width: 60%;
+	margin: 10px auto;
+ 	text-align: center;
+	border: 1px solid #eee;
+ 	box-shadow: 0 2px 3px #ccc;
+}
+
+p {
+	color: grey;
+	font-size: 1.2rem;
+	padding: 10px;
+}

@@ -1,0 +1,21 @@
+.Char {
+	display: inline-block;
+	font-size: 40px;
+	height: 30px;
+	width: 30px;
+	padding: 16px 8px;
+	margin: 2px;
+	text-align: center;
+	line-height: 30px;
+	text-transform: capitalize;
+	background-color: #D3D3D3;
+	white-space: pre;
+	cursor: pointer;
+	font-weight: bold;
+	color: black;
+}
+
+.Char:hover {
+	background-color: red;
+	color: white;
+}

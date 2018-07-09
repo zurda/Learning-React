@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import UserInput from './components/UserInput';
-import ValidationComponent from './components/ValidationComponent';
-import CharComponent from './components/CharComponent';
+import Validation from './components/Validation';
+import Char from './components/Char';
 import './App.css';
 
 class App extends Component {
@@ -19,10 +18,8 @@ class App extends Component {
 	deleteCharHandler = (charIndex) => {
 		// creates an array and copies it
 		const textArray = this.state.text.split('').slice();
-		console.log(charIndex);
 		textArray.splice(charIndex, 1);
 		this.setState({text: textArray.join('')});
-
 	}
 
   render() {
@@ -31,15 +28,16 @@ class App extends Component {
   	splitMessage = 
   		<div>
   			{textArray.map((char, index) => {
-  				return <CharComponent myChar={char} 
+  				return <Char myChar={char} key={index}
   								click={() => this.deleteCharHandler(index)} />
   			})}
 
   		</div>
     return (
       <div className="App">
-	      <UserInput changed={this.changeInputHandler} inputLength={this.state.length} />
-	      <ValidationComponent inputLength={this.state.length} />
+      	<input className='UserInput' type='text' onChange={this.changeInputHandler} value={this.state.text} placeholder='Enter some text' />
+      	<p>Original text length: {this.state.length}</p>
+	      <Validation inputLength={this.state.length} />
 	      {splitMessage}
       </div>
     );
