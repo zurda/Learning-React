@@ -195,24 +195,6 @@ Webpack is where we can change the way we handle CSS files, and unlock this extr
 - Save the files, close them. 
 
 With that, when we import `App.css` it will now scope the `CSS` classes within this `CSS` file to this component where we import it. So if we have the classes inside `App.css`, we can now import them from our css file. We should update the import statement and add a name for the class we're importing: 
-=======
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> d8c4b1169a3ba302e98ec607b29ec2a6ef3b45fb
 
 ```
 import classes from './App.css';
@@ -264,7 +246,7 @@ These classes are now available in the `App.js` since we imported it. We want ou
   <button className={btnClass} onClick={this.togglePersonsHandler}>Show/Hide persons</button>
   ```
 
-### Adding media queries
+### Adding Media Queries
 
 Css modules make media queries really easy. In order to add the media query we used earlier, all we need to do is to add this code to our `Person.css`: 
 
