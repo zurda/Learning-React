@@ -13,3 +13,4 @@ Notes include assignment instructions and my own solutions.
 4. [Rendering Lists and Conditional Content](04-rendering-lists-and-conditional-content.md)
 	- [Exercise Instructions](04.1-exercise-instructions.md)
 	- [Exercise Solution](04.1-exercise-solution)
+5. [Styling React Components](05-styling-react-components.md)
