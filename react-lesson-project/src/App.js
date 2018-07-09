@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import classes from './App.css';
 import Person from './Person/Person';
 
 class App extends Component {
@@ -41,18 +41,9 @@ class App extends Component {
   }
  
   render() {
-    const style = {
-      backgroundColor: '#70a970',
-      font: 'inherit',
-      border: '1px solid #ccc',
-      padding: '8px',
-      cursor: 'pointer',
-      boxShadow: '0 2px 2px #ccc',
-      outline: 'none'
-    }
-
 
     let persons = null;
+    let btnClass = '';
 
     if (this.state.showPersons) {
       persons = 
@@ -66,23 +57,23 @@ class App extends Component {
                       changed={(event) => this.nameChangedHandler(event, person.id)} />
             })}
         </div>
-      style.backgroundColor = 'tomato';
+      btnClass = classes.red;
     }
 
-    let classes = [];
+    let assignedClasses = [];
     if (this.state.persons.length <= 2) {
-      classes.push('red');
+      assignedClasses.push( classes.red );
     }
     if (this.state.persons.length <=1) {
-      classes.push('bold');
-      classes = classes.join(' ');
+      assignedClasses.push( classes.bold );
+      assignedClasses = assignedClasses.join(' ');
     } 
 
    return (
-     <div className="App">
+     <div className={classes.App}>
        <h1>Participants</h1>
-       <p className={classes} >Dynamically update classes</p>
-       <button style={style}
+       <p className={assignedClasses} >Dynamically update classes</p>
+       <button className={btnClass}
        onClick={this.togglePersonsHandler}>Show/Hide persons</button>
        {persons}
      </div>
