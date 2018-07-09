@@ -6,7 +6,7 @@ Let's go back to our Persons projects. We have a button in our `App.js` file whi
 **App.js**
 
 ```
-// inline style:
+//inline style:
 const style = {
       backgroundColor: '#8FBC8F',
       font: 'inherit',
