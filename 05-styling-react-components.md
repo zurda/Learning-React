@@ -149,5 +149,27 @@ Once you save your code, and click the button, you'll see the console is showing
 
 Using `CSS modules` allows us to make css files that are scoped to a specific JS component file. This way whichever style we declare in the CSS file could be assigned to the specific component without applying to the global scope. 
 
-In order to display this, we shohuld remove all uses of `radium` (and `StyleRoot`) from our code. We'll need to unlock the feature of CSS modules, and for that, we'll need access and edit the project's configuration. We'll use the command `eject` to get access to the configuration. This should be done carefully, because we don't want to break the setup (if you're using git to track your changes, make sure you add and commit your changes before running the eject command).
+In order to display this, we shohuld remove all uses of `radium` (and `StyleRoot`) from our code. We'll need to unlock the feature of CSS modules, and for that, we'll need access and edit the project's configuration. We'll use the command `eject` to get access to the configuration. This should be done carefully, because we don't want to break the setup (if you're using git to track your changes, make sure you `add` and `commit` your changes before running the `eject` command).
+
+#### Unlocking CSS Modules
+
+- Open the terminal 
+- Run `npn run eject` to eject the configuration
+- Click `y` when asked `? Are you sure you want to eject? This action is permanent. (y/N)` 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
